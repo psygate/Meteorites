@@ -1,0 +1,20 @@
+name: Meteors
+main: com.psygate.meteorites.Meteors
+version: 1.0
+author: psygate
+#depend: [ProtocolLib]
+description: Creates meteor events.
+
+commands:
+    spawnmeteor:
+        description: Spawns a meteor where you are facing at your position.
+        permission: meteors.spawn
+        
+        
+permissions:
+    meteors.*:
+        default: op
+        children:
+            meteors.spawn: true
+    meteors.spawn:
+        default: op

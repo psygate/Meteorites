@@ -1,0 +1,108 @@
+worlds:
+    - world
+    
+performance:
+    max_meteorites: 2
+
+# Spawn check interval in minutes.
+spawn_interval: 1
+    
+# Meteor definitions
+meteors:
+    small:
+        ice:
+            radius: 1
+            material: PACKED_ICE
+            # Scorch touched blocks. This will cause the meteorite to ignite plants and stuff.
+            scorch: true
+            # Radius in which blocks will be scorched. Has to be strictily greater than displace_radius.
+            scorch_radius: 5
+            # Displace block? (Aka craters.)
+            displace: true
+            # The radius in which blocks are displaced.
+            displace_radius: 3
+            # How many blocks * radius the meteor will displace before exploding.
+            displace_modifier: 500
+            spawn_probability: 0.1
+        
+        diamond:
+            radius: 1
+            material: DIAMOND_ORE
+            scorch: true
+            scorch_radius: 5
+            displace: true
+            displace_radius: 3
+            displace_modifier: 1000
+            spawn_probability: 0.1
+
+        iron:
+            radius: 1
+            material: IRON_ORE
+            scorch: true
+            scorch_radius: 5
+            displace: true
+            displace_radius: 3
+            displace_modifier: 5000
+            spawn_probability: 0.1
+        
+    medium:
+        ice:
+            radius: 3
+            material: PACKED_ICE
+            scorch: true
+            scorch_radius: 7
+            displace: true
+            displace_radius: 5
+            displace_modifier: 1000
+            spawn_probability: 0.1
+        
+        diamond:
+            radius: 3
+            material: DIAMOND_ORE
+            scorch: true
+            scorch_radius: 7
+            displace: true
+            displace_radius: 5
+            displace_modifier: 2000
+            spawn_probability: 0.1
+
+        iron:
+            radius: 3
+            material: IRON_ORE
+            scorch: true
+            scorch_radius: 7
+            displace: true
+            displace_radius: 5
+            displace_modifier: 10000
+            spawn_probability: 0.1
+            
+    large:
+        ice:
+            radius: 5
+            material: PACKED_ICE
+            scorch: true
+            scorch_radius: 9
+            displace: true
+            displace_radius: 7
+            displace_modifier: 3000
+            spawn_probability: 0.1
+        
+        diamond:
+            radius: 5
+            material: DIAMOND_ORE
+            scorch: true
+            scorch_radius: 9
+            displace: true
+            displace_radius: 7
+            displace_modifier: 6000
+            spawn_probability: 0.1
+
+        iron:
+            radius: 5
+            material: IRON_ORE
+            scorch: true
+            scorch_radius: 9
+            displace: true
+            displace_radius: 7
+            displace_modifier: 30000
+            spawn_probability: 0.1
